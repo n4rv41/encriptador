@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assets/Logo.png" alt="logo" />
+    </header>
+    <main>
+      <section class="seccion-encriptar">
+        <div class="contenedor-texto">
+          <textarea
+            class="texto-entrada"
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
+        </div>
+
+        <div class="advertencia">
+          <img src="./assets/alerta.png" alt="advertencia" />
+          <p>solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="contenedor-botones">
+          <button onclick="mostrarTextoEncriptado()" class="boton-encriptar">Encriptar</button>
+          <button onclick="mostrarTextoDesencriptado()" class="boton-desencriptar">Desencriptar</button>
+        </div>
+      </section>
+
+      <section class="seccion-desencriptar">
+        <div class="contenedor-muneco">
+          <img class="muneco" src="./assets/Muñeco.png" alt="muneco" />
+        </div>
+
+        <div class="contenedor-mensaje">
+          <h3 class="mensaje-texto-1">Ningún mensaje fue encontrado</h3>
+          <p class="mensaje-texto-2">
+            Ingresa el texto que deseas encriptar o desencriptar
+          </p>
+        </div>
+
+        <div class="contenedor-resultado">
+          <p  class="texto-salida"></p>
+        </div>
+
+        <div class="contenedor-copiar">
+          <button onclick="copiarTexto()" class="boton-copiar">copiar</button>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="contenedor-autor">
+        <p>Desarrolado Por Juan Peña</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+
+  </body>
+</html>
